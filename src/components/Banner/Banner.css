@@ -1,0 +1,50 @@
+.banner__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aqua;
+  background-color: black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.banner__header h1 {
+  font-size: 3rem;
+  margin: 10px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: aqua;
+    border: 2px solid aqua;
+  }
+  25% {
+    color: yellow;
+    border: 2px solid yellow;
+  }
+  50% {
+    color: red;
+    border: 2px solid red;
+  }
+  75% {
+    color: green;
+    border: 2px solid green;
+  }
+  100% {
+    color: aqua;
+    border: 2px solid aqua;
+  }
+}
+
+.animate {
+  animation: colorChange 10s infinite;
+}
+
+@media (max-width: 768px)
+{
+  .banner__header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,54 @@
+.qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  /* height: 650px; */
+}
+
+.qr-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 1.3rem;
+  /* margin: 1rem; */
+}
+
+.qr-component img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.qr-component span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.qr-component p {
+  color: hsl(220, 15%, 55%);
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px)
+{
+  .qr-wrapper {
+    align-items: center;
+  }
+
+  .qr-component {
+    width: 80%;
+    height: auto;
+  }
+
+  .qr-component p {
+    padding: 0;
+  }
+}
+
